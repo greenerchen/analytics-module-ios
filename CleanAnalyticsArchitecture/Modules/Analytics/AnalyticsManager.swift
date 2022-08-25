@@ -23,10 +23,3 @@ class AnalyticsManager {
         }
     }
 }
-
-// MARK: - Home events
-extension AnalyticsManager {
-    func logHomeScreenAppeared() {
-        log(HomeScreenAppearedEvent())
-    }
-}

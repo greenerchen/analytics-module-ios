@@ -39,10 +39,20 @@ class AnalyticsManagerTests: XCTestCase {
     }
 
     func testLogHomeScreenAppeared() {
-        sut.log(HomeScreenAppearedEvent())
+        sut.log(HomeScreenEvent.homeScreenAppeared)
         
         let containsEvent = spyEngine1.events.contains { event in
             event.name == "HomeScreenAppeared"
+        }
+        XCTAssertTrue(containsEvent)
+    }
+    
+    func testLogAButtonAppeared() {
+        sut.log(HomeScreenEvent.aButtonTapped(clicked: "true"))
+        
+        let containsEvent = spyEngine1.events.contains { event in
+            event.name == "AButtonTapped" &&
+            event.metadata == ["clicked": "true"]
         }
         XCTAssertTrue(containsEvent)
     }
