@@ -13,9 +13,16 @@
 		AA3FA38028B76CCA00896269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA3FA37E28B76CCA00896269 /* Main.storyboard */; };
 		AA3FA38228B76CCE00896269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA3FA38128B76CCE00896269 /* Assets.xcassets */; };
 		AA3FA38528B76CCE00896269 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA3FA38328B76CCE00896269 /* LaunchScreen.storyboard */; };
-		AA3FA39028B76CCE00896269 /* CleanAnalyticsArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FA38F28B76CCE00896269 /* CleanAnalyticsArchitectureTests.swift */; };
+		AA3FA39028B76CCE00896269 /* CloudKitAnalyticsEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FA38F28B76CCE00896269 /* CloudKitAnalyticsEngineTests.swift */; };
 		AA3FA39A28B76CCE00896269 /* CleanAnalyticsArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FA39928B76CCE00896269 /* CleanAnalyticsArchitectureUITests.swift */; };
 		AA3FA39C28B76CCE00896269 /* CleanAnalyticsArchitectureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FA39B28B76CCE00896269 /* CleanAnalyticsArchitectureUITestsLaunchTests.swift */; };
+		AA3FA3AE28B76D8300896269 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FA3AD28B76D8300896269 /* AnalyticsManager.swift */; };
+		AA3FA3B028B76DB700896269 /* AnalyticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FA3AF28B76DB700896269 /* AnalyticsEngine.swift */; };
+		AA3FA3B228B76F1500896269 /* CloudKitAnalyticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FA3B128B76F1500896269 /* CloudKitAnalyticsEngine.swift */; };
+		AA3FA3B628B7738600896269 /* AnalyticsEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FA3B528B7738600896269 /* AnalyticsEvents.swift */; };
+		AA3FA3BA28B78C6100896269 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AA3FA3B928B78C6100896269 /* FirebaseAnalyticsSwift */; };
+		AA3FA3BD28B78CCC00896269 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3FA3BC28B78CCC00896269 /* CloudKit.framework */; };
+		AA3FA3C128B794A700896269 /* AnalyticsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FA3C028B794A700896269 /* AnalyticsManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +52,17 @@
 		AA3FA38428B76CCE00896269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA3FA38628B76CCE00896269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA3FA38B28B76CCE00896269 /* CleanAnalyticsArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanAnalyticsArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA3FA38F28B76CCE00896269 /* CleanAnalyticsArchitectureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanAnalyticsArchitectureTests.swift; sourceTree = "<group>"; };
+		AA3FA38F28B76CCE00896269 /* CloudKitAnalyticsEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitAnalyticsEngineTests.swift; sourceTree = "<group>"; };
 		AA3FA39528B76CCE00896269 /* CleanAnalyticsArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanAnalyticsArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA3FA39928B76CCE00896269 /* CleanAnalyticsArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanAnalyticsArchitectureUITests.swift; sourceTree = "<group>"; };
 		AA3FA39B28B76CCE00896269 /* CleanAnalyticsArchitectureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanAnalyticsArchitectureUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AA3FA3AD28B76D8300896269 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		AA3FA3AF28B76DB700896269 /* AnalyticsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEngine.swift; sourceTree = "<group>"; };
+		AA3FA3B128B76F1500896269 /* CloudKitAnalyticsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitAnalyticsEngine.swift; sourceTree = "<group>"; };
+		AA3FA3B528B7738600896269 /* AnalyticsEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvents.swift; sourceTree = "<group>"; };
+		AA3FA3B728B7763000896269 /* CleanAnalyticsArchitecture.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CleanAnalyticsArchitecture.entitlements; sourceTree = "<group>"; };
+		AA3FA3BC28B78CCC00896269 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		AA3FA3C028B794A700896269 /* AnalyticsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3FA3BA28B78C6100896269 /* FirebaseAnalyticsSwift in Frameworks */,
+				AA3FA3BD28B78CCC00896269 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +99,7 @@
 				AA3FA38E28B76CCE00896269 /* CleanAnalyticsArchitectureTests */,
 				AA3FA39828B76CCE00896269 /* CleanAnalyticsArchitectureUITests */,
 				AA3FA37628B76CCA00896269 /* Products */,
+				AA3FA3BB28B78CCC00896269 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +116,10 @@
 		AA3FA37728B76CCA00896269 /* CleanAnalyticsArchitecture */ = {
 			isa = PBXGroup;
 			children = (
-				AA3FA37828B76CCA00896269 /* AppDelegate.swift */,
-				AA3FA37A28B76CCA00896269 /* SceneDelegate.swift */,
-				AA3FA37C28B76CCA00896269 /* ViewController.swift */,
-				AA3FA37E28B76CCA00896269 /* Main.storyboard */,
-				AA3FA38128B76CCE00896269 /* Assets.xcassets */,
-				AA3FA38328B76CCE00896269 /* LaunchScreen.storyboard */,
+				AA3FA3B728B7763000896269 /* CleanAnalyticsArchitecture.entitlements */,
+				AA3FA3A828B76CFD00896269 /* App */,
+				AA3FA3AB28B76D3700896269 /* Modules */,
+				AA3FA3AC28B76D4F00896269 /* Resources */,
 				AA3FA38628B76CCE00896269 /* Info.plist */,
 			);
 			path = CleanAnalyticsArchitecture;
@@ -113,7 +128,7 @@
 		AA3FA38E28B76CCE00896269 /* CleanAnalyticsArchitectureTests */ = {
 			isa = PBXGroup;
 			children = (
-				AA3FA38F28B76CCE00896269 /* CleanAnalyticsArchitectureTests.swift */,
+				AA3FA3B328B770D500896269 /* Analytics */,
 			);
 			path = CleanAnalyticsArchitectureTests;
 			sourceTree = "<group>";
@@ -125,6 +140,78 @@
 				AA3FA39B28B76CCE00896269 /* CleanAnalyticsArchitectureUITestsLaunchTests.swift */,
 			);
 			path = CleanAnalyticsArchitectureUITests;
+			sourceTree = "<group>";
+		};
+		AA3FA3A828B76CFD00896269 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA3FA37828B76CCA00896269 /* AppDelegate.swift */,
+				AA3FA37A28B76CCA00896269 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA3FA3AA28B76D1700896269 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				AA3FA3AD28B76D8300896269 /* AnalyticsManager.swift */,
+				AA3FA3B528B7738600896269 /* AnalyticsEvents.swift */,
+				AA3FA3B428B7737200896269 /* Engines */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		AA3FA3AB28B76D3700896269 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AA3FA3AA28B76D1700896269 /* Analytics */,
+				AA3FA3C228B79FB800896269 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AA3FA3AC28B76D4F00896269 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA3FA38128B76CCE00896269 /* Assets.xcassets */,
+				AA3FA37E28B76CCA00896269 /* Main.storyboard */,
+				AA3FA38328B76CCE00896269 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA3FA3B328B770D500896269 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				AA3FA38F28B76CCE00896269 /* CloudKitAnalyticsEngineTests.swift */,
+				AA3FA3C028B794A700896269 /* AnalyticsManagerTests.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		AA3FA3B428B7737200896269 /* Engines */ = {
+			isa = PBXGroup;
+			children = (
+				AA3FA3AF28B76DB700896269 /* AnalyticsEngine.swift */,
+				AA3FA3B128B76F1500896269 /* CloudKitAnalyticsEngine.swift */,
+			);
+			path = Engines;
+			sourceTree = "<group>";
+		};
+		AA3FA3BB28B78CCC00896269 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA3FA3BC28B78CCC00896269 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA3FA3C228B79FB800896269 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AA3FA37C28B76CCA00896269 /* ViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +230,9 @@
 			dependencies = (
 			);
 			name = CleanAnalyticsArchitecture;
+			packageProductDependencies = (
+				AA3FA3B928B78C6100896269 /* FirebaseAnalyticsSwift */,
+			);
 			productName = CleanAnalyticsArchitecture;
 			productReference = AA3FA37528B76CCA00896269 /* CleanAnalyticsArchitecture.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +305,9 @@
 				Base,
 			);
 			mainGroup = AA3FA36C28B76CC900896269;
+			packageReferences = (
+				AA3FA3B828B78C6100896269 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = AA3FA37628B76CCA00896269 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +351,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3FA3AE28B76D8300896269 /* AnalyticsManager.swift in Sources */,
+				AA3FA3B228B76F1500896269 /* CloudKitAnalyticsEngine.swift in Sources */,
+				AA3FA3B628B7738600896269 /* AnalyticsEvents.swift in Sources */,
 				AA3FA37D28B76CCA00896269 /* ViewController.swift in Sources */,
 				AA3FA37928B76CCA00896269 /* AppDelegate.swift in Sources */,
 				AA3FA37B28B76CCA00896269 /* SceneDelegate.swift in Sources */,
+				AA3FA3B028B76DB700896269 /* AnalyticsEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +365,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA3FA39028B76CCE00896269 /* CleanAnalyticsArchitectureTests.swift in Sources */,
+				AA3FA3C128B794A700896269 /* AnalyticsManagerTests.swift in Sources */,
+				AA3FA39028B76CCE00896269 /* CloudKitAnalyticsEngineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,8 +533,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CleanAnalyticsArchitecture/CleanAnalyticsArchitecture.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FQHBQB66L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CleanAnalyticsArchitecture/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -462,8 +562,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CleanAnalyticsArchitecture/CleanAnalyticsArchitecture.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FQHBQB66L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CleanAnalyticsArchitecture/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -596,6 +698,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA3FA3B828B78C6100896269 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA3FA3B928B78C6100896269 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA3FA3B828B78C6100896269 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AA3FA36D28B76CC900896269 /* Project object */;
 }
