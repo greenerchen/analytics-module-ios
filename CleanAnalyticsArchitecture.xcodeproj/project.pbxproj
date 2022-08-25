@@ -23,6 +23,8 @@
 		AA3FA3BA28B78C6100896269 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AA3FA3B928B78C6100896269 /* FirebaseAnalyticsSwift */; };
 		AA3FA3BD28B78CCC00896269 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3FA3BC28B78CCC00896269 /* CloudKit.framework */; };
 		AA3FA3C128B794A700896269 /* AnalyticsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FA3C028B794A700896269 /* AnalyticsManagerTests.swift */; };
+		AA3FA3C528B7A2A000896269 /* HomeEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FA3C428B7A2A000896269 /* HomeEventTests.swift */; };
+		AA3FA3C828B7A32F00896269 /* AnalyticsHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FA3C728B7A32F00896269 /* AnalyticsHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		AA3FA3B728B7763000896269 /* CleanAnalyticsArchitecture.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CleanAnalyticsArchitecture.entitlements; sourceTree = "<group>"; };
 		AA3FA3BC28B78CCC00896269 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		AA3FA3C028B794A700896269 /* AnalyticsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManagerTests.swift; sourceTree = "<group>"; };
+		AA3FA3C428B7A2A000896269 /* HomeEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventTests.swift; sourceTree = "<group>"; };
+		AA3FA3C728B7A32F00896269 /* AnalyticsHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				AA3FA3B328B770D500896269 /* Analytics */,
+				AA3FA3C328B7A26700896269 /* Event Logging */,
+				AA3FA3C628B7A32000896269 /* Helpers */,
 			);
 			path = CleanAnalyticsArchitectureTests;
 			sourceTree = "<group>";
@@ -212,6 +218,22 @@
 				AA3FA37C28B76CCA00896269 /* ViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		AA3FA3C328B7A26700896269 /* Event Logging */ = {
+			isa = PBXGroup;
+			children = (
+				AA3FA3C428B7A2A000896269 /* HomeEventTests.swift */,
+			);
+			path = "Event Logging";
+			sourceTree = "<group>";
+		};
+		AA3FA3C628B7A32000896269 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AA3FA3C728B7A32F00896269 /* AnalyticsHelpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +387,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3FA3C828B7A32F00896269 /* AnalyticsHelpers.swift in Sources */,
+				AA3FA3C528B7A2A000896269 /* HomeEventTests.swift in Sources */,
 				AA3FA3C128B794A700896269 /* AnalyticsManagerTests.swift in Sources */,
 				AA3FA39028B76CCE00896269 /* CloudKitAnalyticsEngineTests.swift in Sources */,
 			);

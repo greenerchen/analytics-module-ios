@@ -38,29 +38,12 @@ class AnalyticsManagerTests: XCTestCase {
         XCTAssertEqual(eventOnEngine2.metadata, ["loaded": "true"])
     }
 
-}
-
-protocol SpyEngineProtocol {
-    var events: [AnalyticsEvent] { get set }
-}
-
-typealias AnalyticsEngineDI = AnalyticsEngine & SpyEngineProtocol
-
-class SpyEngine: AnalyticsEngineDI {
-    let name: String
-    var events: [AnalyticsEvent] = []
-    
-    init(name: String) {
-        self.name = name
+    func testLogHomeScreenAppeared() {
+        sut.log(HomeScreenAppearedEvent())
+        
+        let containsEvent = spyEngine1.events.contains { event in
+            event.name == "HomeScreenAppeared"
+        }
+        XCTAssertTrue(containsEvent)
     }
-    
-    func sendEvent(name: String, metadata: [String : String]) {
-        let event = TestEvent(name: name, metadata: metadata)
-        events.append(event)
-    }
-}
-
-struct TestEvent: AnalyticsEvent {
-    var name: String
-    var metadata: [String : String]
 }

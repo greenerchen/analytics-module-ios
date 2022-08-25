@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private let analytics: AnalyticsManager = AnalyticsManager.shared
+    var analytics: AnalyticsManager = AnalyticsManager.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
