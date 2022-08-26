@@ -1,5 +1,5 @@
 # clean-analytics-architecture-ios
-This project implements the analytics system described in Sundell's post [Building an enum-based analytics system in Swift](https://www.swiftbysundell.com/articles/building-an-enum-based-analytics-system-in-swift/). Using enum to manage events will eventually become messy when the number of events grows to hundreds. Therefore, I will have used structure instead of enum to better manage events, when it needs to refactor. Since events are added, modified, deleted frequently, there is a high possibility to automate the process of generating events. Keep the events-related code simple.
+This project implements the analytics system described in Sundell's post [Building an enum-based analytics system in Swift](https://www.swiftbysundell.com/articles/building-an-enum-based-analytics-system-in-swift/) with unit tests. Using enum to manage events will eventually become messy when the number of events grows to hundreds. Therefore, I will have used structure instead of enum to better manage events, when it needs to refactor. Since events are added, modified, deleted frequently, there is a high possibility to automate the process of generating events. Keep the events-related code simple.
 
 ## Architecture
 ![Architecture](architecture.jpg)
